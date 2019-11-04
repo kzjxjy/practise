@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+    <style>
+        body{
+            margin: 0px;
+            font-size: 20px;
+            background-image: url("http://p2.qhimg.com/bdr/__85/t0100dc32508c7e4d7a.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .box{
+            margin: 0px;
+            width: 100%;
+            height: 20px;
+            background-color: rgb(34, 129, 131);
+            position: fixed;
+            top: 0px;
+        }
+        .list{
+            /*display: none;*/
+            margin: 0px;
+            width: 200px;
+            height: 60px;
+            background-color: rgb(97, 142, 139);
+        }
+        ul{
+            padding: 0px;
+            text-align: center;
+            position: relative;
+            
+        }
+        .fl{
+           padding: 0px;
+           border-bottom: 1px dotted  gray;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ol{
+            top: 0;
+            display: none;
+            position: absolute;
+            left: 200px;
+            background-color: rgb(104, 158, 148);
+            width: 200px;
+            list-style-type: none;
+            padding: 0px;
+        }
+        li{
+            border-bottom: 1px dotted black;
+        }
+        /*. box:hover>.list{
+            display: block;
+        } */
+        li:last-child{
+            border: none;
+        }
+        .fl:hover>ol{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="list">
+            <ul>
+                <li class="fl">
+                    <a href="#">网页布局练习</a>
+                    <ol>
+                        <li><a href="布局/一列布局.html">一列布局</a></li>
+                        <li><a href="布局/二列布局.html">二列布局</a></li>
+                        <li><a href="布局/三列布局.html">三列布局</a></li>
+                        <li><a href="布局/三列布局special.html">三列布局特殊</a></li>
+                        <li><a href="布局/混合布局.html">混合布局</a></li>
+                    </ol>
+                </li>
+                <li class="fl">
+                    <a href="../../index.html">返回</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

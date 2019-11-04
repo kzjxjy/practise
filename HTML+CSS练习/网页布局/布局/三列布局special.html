@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局</title>
+    <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+    
+            .main{
+                width: 800px;
+                margin: 0 auto;
+    
+            }
+    
+            .left{
+                width: 200px;/*固定宽度两列布局*/
+                height: 500px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+
+            .middle{
+                height: 500px;
+                margin: 0 300px 0 200px;
+                background-color: salmon;
+            }
+    
+            .right{
+                width: 300px;/*固定宽度两列布局*/
+                height: 500px;
+                position: absolute;
+                right: 0;
+                top: 0%;
+                background-color: saddlebrown;
+            }
+        </style>
+</head>
+<body>
+    <div class="left">200px</div>
+    <div class="middle">这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字</div>
+    <div class="right">300px</div>
+</body>
+</html>

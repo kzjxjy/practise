@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>混合布局</title>
+    <style>
+            body{
+                margin: 0;
+                padding: 0;
+            } /*清除默认样式*/
+    
+            .top{
+                height: 100px;
+                background-color:darkcyan;
+            }
+    
+            .main{
+                width: 800px;
+                height: 600px;
+                background-color: gray;
+                margin: 0 auto; /*0代表上下，auto代表左右*/
+            }
+            .left{
+                width: 200px;
+                height: 600px;
+                background-color: sandybrown;
+                float: left;
+            }
+            .right{
+                width: 600px;
+                height: 600px;
+                background-color: brown;
+                float: right;
+            }
+            .sub_l{
+                width: 400px;
+                height: 600px;
+                background-color: darkseagreen;
+                float: left;
+            }
+            .sub_r{
+                width: 200px;
+                height: 600px;
+                background-color: lightblue;
+                float:right;
+            }
+            .bottom{
+                width: 800px;
+                height: 100px;
+                background-color: darksalmon;
+                margin: 0 auto;
+            }
+        </style>
+</head>
+<body>
+        <div class="top"></div>
+        <div class="main">
+            <div class="left"></div>
+            <div class="right">
+                <div class="sub_l"></div>
+                <div class="sub_r"></div>
+            </div>
+        </div>
+        <div class="bottom"></div>   
+</body>
+</html>
